@@ -13,7 +13,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-
+        appBar: AppBar(title: Text('Tablero de Juego Táctico')),
+        body: Column(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Row(
+                children: [
+                  Expanded(flex: 2, child: Container(color: Colors.blue,)),
+                  Expanded(child: Container(color: Colors.green))
+                ],
+              ),
+            ),
+            Expanded(child: Container(color: Colors.red))
+          ],
+        ),
       ),
     );
   }
