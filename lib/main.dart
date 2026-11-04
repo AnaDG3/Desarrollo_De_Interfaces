@@ -13,26 +13,207 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text('Tablero de Juego Táctico')),
+        backgroundColor: Colors.black45,
+        appBar: AppBar(title: Text('Tablero de Juego Táctico', style: TextStyle(color: Colors.white),), backgroundColor: Colors.black54,),
         body: Column(
           children: [
             Expanded(
               flex: 2,
               child: Row(
                 children: [
-                  Expanded(flex: 2, child: Container(color: Colors.blue,)),
-                  Expanded(child: Container(color: Colors.green))
+                  Expanded(
+                    flex: 2,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                              Expanded(child: Container(color: Colors.blueGrey, margin: EdgeInsets.all(2),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  Icons.shield,
+                                  color: Colors.grey,
+                                  size: 24,
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      color: Colors.black26,
+                      margin: EdgeInsets.all(2),
+                      alignment: Alignment.center,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Elemento Superior"),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Elemento Inferior"),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
-            Expanded(child: Container(color: Colors.red))
+            Expanded(child: Container(color: Colors.white)),
           ],
         ),
       ),
     );
   }
 }
-
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
