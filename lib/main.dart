@@ -185,6 +185,18 @@ class MyApp extends StatelessWidget {
                       color: Colors.black26,
                       margin: EdgeInsets.all(2),
                       alignment: Alignment.center,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Jugador 1 (Azul)", style: TextStyle(color: Colors.white),),
+                          SizedBox(height: 40, child: Icon(Icons.person, color: Colors.blue,),),
+                          SizedBox(height: 20, child: Text("Puntos: 120", style: TextStyle(color: Colors.white70, fontSize: 10),),),
+                          SizedBox(height: 300,),
+                          Text("Jugador 2 (Rojo)", style: TextStyle(color: Colors.white),),
+                          SizedBox(height: 40, child: Icon(Icons.person, color: Colors.red,),),
+                          SizedBox(height: 20, child: Text("Puntos: 120", style: TextStyle(color: Colors.white70, fontSize: 10),),)
+                        ],
+                      ),
                     ),
                   )
                 ],
